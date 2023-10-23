@@ -1,7 +1,6 @@
 
 window.addEventListener("load", function () {
     calculateTime();
-    setTimeout(calculateTime, 200);
 });
 
 function calculateTime() {
@@ -27,4 +26,6 @@ function calculateTime() {
     document.getElementById('hour').innerText = hour;
     document.getElementById('minute').innerText = minute;
     document.getElementById('ampm').innerText = ampm;
+
+    setTimeout(calculateTime, 200);
 }
